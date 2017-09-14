@@ -1,0 +1,34 @@
+#logo-caption{
+	float: right;
+	margin-right: 40px;
+	line-height: 0;
+}
+.logo-div{
+	float: left;
+}
+.search-div{
+	float: right;
+}
+.search{
+	margin-left: 20px;
+	line-height: 8px;
+}
+.menu > .active, .active{
+	background-color: #007cc0;
+	color: #FFF;
+}
+.menu > div{
+	background-color: #f2f1f2
+}
+.step-progress > div{
+	margin: 0;
+	padding: 0;
+	height: 36px;
+}
+.completed{
+	background-color: #e2f0f5;
+	color: #007cc0;
+}
+.divider-img{
+	float: right;
+}

@@ -3,7 +3,7 @@
 <head>
 	<title>Advantage</title>
 	<link rel="stylesheet" type="text/css" href="assets/bootstrap.css">
-	<script type="text/javascript" src="bootstrap.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/style.css"></link>
 	<style type="text/css">
 	/*	.row, .col {
 			border: solid 1px blue;
@@ -17,21 +17,36 @@
 	<div class="container">
 		<!-- Header -->
 		<div class="row">
-			<div class="col-xs-12 col-md-8">.col-xs-12 .col-md-8</div>
-  			<div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+			<div class="logo-div">
+				<p><img src="assets/images/adv_logo_hd.gif"></p>
+				<p id="logo-caption">rent a car</p>
+			</div>
+  			<div class="search-div">
+  				<select>
+  					<option>United States</option>
+  					<option>India</option>
+  					<option>Germany</option>
+  				</select>
+  				<select>
+  					<option>English</option>
+  					<option>Hindi</option>
+  					<option>German</option>
+  				</select>
+  				<input class="search" type="text" name="search" placeholder="Search">
+  			</div>
 		</div>
 		<!-- Menu -->
-		<div class="row">
-			<div class="col-lg-3">Rate & Reservations</div>
+		<div class="row menu">
+			<div class="col-lg-3 active">Rate & Reservations</div>
 			<div class="col-lg-3">A-Pass online check-in</div>
 			<div class="col-lg-2">A-Pass online check-in</div>
 			<div class="col-lg-2">A-Pass online check-in</div>
 			<div class="col-lg-2">A-Pass online check-in</div>
 		</div>
 		<!-- Progress -->
-		<div class="row">
-			<div class="col-lg-2">Step 1</div>
-			<div class="col-lg-5">Step 2</div>
+		<div class="row step-progress">
+			<div class="col-lg-2 completed">Step 1<img class="divider-img" src="assets/images/resStepDivider.gif"></div>
+			<div class="col-lg-5 active">Service vehicles & extras<img class="divider-img" src="assets/images/resStepDividerActive.gif"></div>
 			<div class="col-lg-2">Step 3</div>
 			<div class="col-lg-3">Step 4</div>
 		</div>
@@ -40,9 +55,20 @@
 			<div class="col-lg-8">
 				<!-- Car Details -->
 				<div class="row">
-					<div class="col-lg-2">Step 1</div>
-					<div class="col-lg-4">Step 2</div>
+					<!-- Car Price -->
+					<div class="col-lg-2">
+						<p class="price">10.99</p>
+						<p class="per-day">USD/Day</p>
+						<input type="Submit" name="select" value="Select">
+						<p class="total-price">Total 76.93 USD</p>
+					</div>
+					<!-- Car Image -->
+					<div class="col-lg-4">
+						<img src="">
+					</div>
+					<!-- Car Capacity -->
 					<div class="col-lg-3">Step 3</div>
+					<!-- Car Features -->
 					<div class="col-lg-3">Step 4</div>
 				</div>
 				<div class="row">
@@ -58,13 +84,17 @@
 					<div class="col-lg-3">Step 4</div>
 				</div>
 			</div>
-			<div class="col-lg-4">Itenary</div>
 			<!-- Itenary -->
+			<div class="col-lg-4">Itenary</div>
 		</div>
 		<!-- Footer -->
 		<div class="row">
-
+			<div class="col-lg-4">Step 1</div>
+			<div class="col-lg-2">Step 2</div>
+			<div class="col-lg-2">Step 3</div>
+			<div class="col-lg-4">Step 4</div>
 		</div>
 	</div>
+	<script type="text/javascript" src="bootstrap.js"></script>
 </body>
 </html>
