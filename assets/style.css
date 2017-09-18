@@ -1,7 +1,17 @@
+body{
+	font-family: Arial;
+	/*background-color: #f2f1f2;*/
+	/*background-image: url("assets/images/adv_bg.jpg");
+	background-repeat: repeat-y;*/
+}
+.container{
+	padding: 20px;
+}
 #logo-caption{
 	float: right;
 	margin-right: 40px;
 	line-height: 0;
+	text-transform: uppercase;
 }
 .logo-div{
 	float: left;
@@ -13,17 +23,25 @@
 	margin-left: 20px;
 	line-height: 8px;
 }
-.menu > .active, .active{
+.menu > .active, .active, #car-select, button{
 	background-color: #007cc0;
 	color: #FFF;
 }
 .menu > div{
-	background-color: #f2f1f2
+	background-color: #f2f1f2;
 }
-.step-progress > div{
+.step-progress > div, .menu > div{
+	font-family: "Gotham Medium";
+	text-transform: uppercase;
+	font-weight: bold;
 	margin: 0;
 	padding: 0;
 	height: 36px;
+	text-align: center;
+}
+.step-progress, .menu{
+	margin-top: 25px;
+    margin-bottom: 25px;
 }
 .completed{
 	background-color: #e2f0f5;
@@ -31,4 +49,60 @@
 }
 .divider-img{
 	float: right;
+	height: 36px;
+}
+.itinerary, .footer, .copyright{
+	background-color: #e2f0f5;
+}
+#change-itinerary{
+	float: right;
+	font-weight: bold;
+}
+#offer img{
+	width: 100%;
+}
+#price{
+	font-size: 23px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+#per-day{
+	line-height: 0;
+	font-size: 11px;
+}
+#total-price{
+	font-size: 10px;
+    margin-top: 5px;
+}
+#car-img{
+
+}
+#car-size{
+	line-height: 0;
+	font-size: 11px;
+}
+#id-select{
+	border: none;
+}
+.price, .car, .capacity{
+	text-align: center;  
+}
+.capacity > p, .features >p{
+	margin-bottom: 0;
+}
+.footer p{
+	color: #007cc0;
+}
+.car-details:nth-child(2){
+	background-color: #f2f1f2;
+}
+#social img{
+	margin-right: 15px;
+}
+#copyright{
+	text-align: center;
+	padding: 10px;
+}
+.footer{
+	margin-top: 40px;
 }

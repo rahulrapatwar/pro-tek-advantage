@@ -8,9 +8,9 @@
 	/*	.row, .col {
 			border: solid 1px blue;
 		}*/
-		div{
+		/*div{
 			border: solid 1px blue;
-		}
+		}*/
 	</style>
 </head>
 <body>
@@ -37,64 +37,301 @@
 		</div>
 		<!-- Menu -->
 		<div class="row menu">
-			<div class="col-lg-3 active">Rate & Reservations</div>
-			<div class="col-lg-3">A-Pass online check-in</div>
-			<div class="col-lg-2">A-Pass online check-in</div>
-			<div class="col-lg-2">A-Pass online check-in</div>
-			<div class="col-lg-2">A-Pass online check-in</div>
+			<div class="col-sm-6 col-md-3 active">Rate & Reservations</div>
+			<div class="col-sm-6 col-md-3">A-Pass online check-in</div>
+			<div class="col-sm-4 col-md-2">A-Pass online check-in</div>
+			<div class="col-sm-4 col-md-2">A-Pass online check-in</div>
+			<div class="col-sm-4 col-md-2">A-Pass online check-in</div>
 		</div>
 		<!-- Progress -->
 		<div class="row step-progress">
-			<div class="col-lg-2 completed">Step 1<img class="divider-img" src="assets/images/resStepDivider.gif"></div>
-			<div class="col-lg-5 active">Service vehicles & extras<img class="divider-img" src="assets/images/resStepDividerActive.gif"></div>
-			<div class="col-lg-2">Step 3</div>
-			<div class="col-lg-3">Step 4</div>
+			<div class="col-sm-6 col-md-2 completed">Step 1<img class="divider-img" src="assets/images/resStepDivider.gif"></div>
+			<div class="col-sm-6 col-md-5 active">2 Service vehicles & extras<img class="divider-img" src="assets/images/resStepDividerActive.gif"></div>
+			<div class="col-sm-6 col-md-2">Step 3</div>
+			<div class="col-sm-6 col-md-3">Step 4</div>
 		</div>
 		<!-- Main Body -->
 		<div class="row">
-			<div class="col-lg-8">
+			<div class="col-sm-8 col-md-8 car-details">
 				<!-- Car Details -->
 				<div class="row">
 					<!-- Car Price -->
-					<div class="col-lg-2">
-						<p class="price">10.99</p>
-						<p class="per-day">USD/Day</p>
-						<input type="Submit" name="select" value="Select">
-						<p class="total-price">Total 76.93 USD</p>
+					<div class="col-sm-6 col-md-2 price">
+						<p id="price">10.99</p>
+						<p id="per-day">USD/DAY</p>
+						<input type="Submit" name="select" value="Select" id="car-select">
+						<p id="total-price">Total 76.93 USD</p>
 					</div>
 					<!-- Car Image -->
-					<div class="col-lg-4">
-						<img src="">
+					<div class="col-sm-6 col-md-4 car">
+						<img src="assets/images/vehicles/car1.gif" id="car-img">
+						<p id="car-size">Extra Small Car</p>
 					</div>
 					<!-- Car Capacity -->
-					<div class="col-lg-3">Step 3</div>
+					<div class="col-sm-6 col-md-3 capacity">
+						<p><span><img src="assets/images/icon_man.gif"><strong> x 4</strong> Passengers</span></p>
+	 					<p><span><img src="assets/images/icon_sm_scase.gif"><strong> x 4</strong> Passengers</span></p>
+						<p><span><img src="assets/images/icon_lg_scase.gif"><strong> x 4</strong> Passengers</span></p>
+					</div>
 					<!-- Car Features -->
-					<div class="col-lg-3">Step 4</div>
+					<div class="col-sm-6 col-md-3 features">
+						<p>Automatic Transmission</p>
+						<p>Air Conditioning</p>
+						<p>24 miles/gallon</p>
+					</div>
 				</div>
-				<div class="row">
-					<div class="col-lg-2">Step 1</div>
-					<div class="col-lg-4">Step 2</div>
-					<div class="col-lg-3">Step 3</div>
-					<div class="col-lg-3">Step 4</div>
+
+				<!-- Car Details -->
+				<div class="row" style="background-color: #f2f1f2">
+					<!-- Car Price -->
+					<div class="col-sm-6 col-md-2 price">
+						<p id="price">13.99</p>
+						<p id="per-day">USD/DAY</p>
+						<input type="Submit" name="select" value="Select" id="car-select">
+						<p id="total-price">Total 97.93 USD</p>
+					</div>
+					<!-- Car Image -->
+					<div class="col-sm-6 col-md-4 car">
+						<img src="assets/images/vehicles/car2.gif" id="car-img">
+						<p id="car-size">Small Car</p>
+					</div>
+					<!-- Car Capacity -->
+					<div class="col-sm-6 col-md-3 capacity">
+						<p><span><img src="assets/images/icon_man.gif"><strong> x 4</strong> Passengers</span></p>
+	 					<p><span><img src="assets/images/icon_sm_scase.gif"><strong> x 4</strong> Passengers</span></p>
+						<p><span><img src="assets/images/icon_lg_scase.gif"><strong> x 4</strong> Passengers</span></p>
+					</div>
+					<!-- Car Features -->
+					<div class="col-sm-6 col-md-3 features">
+						<p>Automatic Transmission</p>
+						<p>Air Conditioning</p>
+						<p>24 miles/gallon</p>
+					</div>
 				</div>
+
+				<!-- Car Details -->
 				<div class="row">
-					<div class="col-lg-2">Step 1</div>
-					<div class="col-lg-4">Step 2</div>
-					<div class="col-lg-3">Step 3</div>
-					<div class="col-lg-3">Step 4</div>
+					<!-- Car Price -->
+					<div class="col-sm-6 col-md-2 price">
+						<p id="price">14.99</p>
+						<p id="per-day">USD/DAY</p>
+						<input type="Submit" name="select" value="Select" id="car-select">
+						<p id="total-price">Total 103.93 USD</p>
+					</div>
+					<!-- Car Image -->
+					<div class="col-sm-6 col-md-4 car">
+						<img src="assets/images/vehicles/car3.gif" id="car-img">
+						<p id="car-size">Medium Car</p>
+					</div>
+					<!-- Car Capacity -->
+					<div class="col-sm-6 col-md-3 capacity">
+						<p><span><img src="assets/images/icon_man.gif"><strong> x 4</strong> Passengers</span></p>
+	 					<p><span><img src="assets/images/icon_sm_scase.gif"><strong> x 4</strong> Passengers</span></p>
+						<p><span><img src="assets/images/icon_lg_scase.gif"><strong> x 4</strong> Passengers</span></p>
+					</div>
+					<!-- Car Features -->
+					<div class="col-sm-6 col-md-3 features">
+						<p>Automatic Transmission</p>
+						<p>Air Conditioning</p>
+						<p>Dual Air Bags</p>
+						<p>24 miles/gallon</p>
+						<p>ABS</p>
+					</div>
+				</div>
+
+				<!-- Car Details -->
+				<div class="row" style="background-color: #f2f1f2">
+					<!-- Car Price -->
+					<div class="col-sm-6 col-md-2 price">
+						<p id="price">17.99</p>
+						<p id="per-day">USD/DAY</p>
+						<input type="Submit" name="select" value="Select" id="car-select">
+						<p id="total-price">Total 119.93 USD</p>
+					</div>
+					<!-- Car Image -->
+					<div class="col-sm-6 col-md-4 car">
+						<img src="assets/images/vehicles/car7.gif" id="car-img">
+						<p id="car-size">Large Car</p>
+					</div>
+					<!-- Car Capacity -->
+					<div class="col-sm-6 col-md-3 capacity">
+						<p><span><img src="assets/images/icon_man.gif"><strong> x 4</strong> Passengers</span></p>
+	 					<p><span><img src="assets/images/icon_sm_scase.gif"><strong> x 4</strong> Passengers</span></p>
+						<p><span><img src="assets/images/icon_lg_scase.gif"><strong> x 4</strong> Passengers</span></p>
+					</div>
+					<!-- Car Features -->
+					<div class="col-sm-6 col-md-3 features">
+						<p>Automatic Transmission</p>
+						<p>Air Conditioning</p>
+						<p>Dual Air Bags</p>
+						<p>24 miles/gallon</p>
+						<p>ABS</p>
+					</div>
+				</div>
+
+				<!-- Car Details -->
+				<div class="row">
+					<!-- Car Price -->
+					<div class="col-sm-6 col-md-2 price">
+						<p id="price">22.99</p>
+						<p id="per-day">USD/DAY</p>
+						<input type="Submit" name="select" value="Select" id="car-select">
+						<p id="total-price">Total 160.93 USD</p>
+					</div>
+					<!-- Car Image -->
+					<div class="col-sm-6 col-md-4 car">
+						<img src="assets/images/vehicles/car5.gif" id="car-img">
+						<p id="car-size">Small SUV</p>
+					</div>
+					<!-- Car Capacity -->
+					<div class="col-sm-6 col-md-3 capacity">
+						<p><span><img src="assets/images/icon_man.gif"><strong> x 4</strong> Passengers</span></p>
+	 					<p><span><img src="assets/images/icon_sm_scase.gif"><strong> x 4</strong> Passengers</span></p>
+						<p><span><img src="assets/images/icon_lg_scase.gif"><strong> x 4</strong> Passengers</span></p>
+					</div>
+					<!-- Car Features -->
+					<div class="col-sm-6 col-md-3 features">
+						<p>Automatic Transmission</p>
+						<p>Air Conditioning</p>
+						<p>Dual Air Bags</p>
+						<p>24 miles/gallon</p>
+						<p>ABS</p>
+					</div>
+				</div>
+
+				<!-- Car Details -->
+				<div class="row" style="background-color: #f2f1f2">
+					<!-- Car Price -->
+					<div class="col-sm-6 col-md-2 price">
+						<p id="price">25.99</p>
+						<p id="per-day">USD/DAY</p>
+						<input type="Submit" name="select" value="Select" id="car-select">
+						<p id="total-price">Total 175.93 USD</p>
+					</div>
+					<!-- Car Image -->
+					<div class="col-sm-6 col-md-4 car">
+						<img src="assets/images/vehicles/car6.gif" id="car-img">
+						<p id="car-size">Medium SUV</p>
+					</div>
+					<!-- Car Capacity -->
+					<div class="col-sm-6 col-md-3 capacity">
+						<p><span><img src="assets/images/icon_man.gif"><strong> x 4</strong> Passengers</span></p>
+	 					<p><span><img src="assets/images/icon_sm_scase.gif"><strong> x 4</strong> Passengers</span></p>
+						<p><span><img src="assets/images/icon_lg_scase.gif"><strong> x 4</strong> Passengers</span></p>
+					</div>
+					<!-- Car Features -->
+					<div class="col-sm-6 col-md-3 features">
+						<p>Automatic Transmission</p>
+						<p>Air Conditioning</p>
+						<p>Dual Air Bags</p>
+						<p>24 miles/gallon</p>
+						<p>ABS</p>
+					</div>
+				</div>
+
+				<!-- Car Details -->
+				<div class="row">
+					<!-- Car Price -->
+					<div class="col-sm-6 col-md-2 price">
+						<p id="price">26.99</p>
+						<p id="per-day">USD/DAY</p>
+						<input type="Submit" name="select" value="Select" id="car-select">
+						<p id="total-price">Total 182.93 USD</p>
+					</div>
+					<!-- Car Image -->
+					<div class="col-sm-6 col-md-4 car">
+						<img src="assets/images/vehicles/car7.gif" id="car-img">
+						<p id="car-size">Mini Van</p>
+					</div>
+					<!-- Car Capacity -->
+					<div class="col-sm-6 col-md-3 capacity">
+						<p><span><img src="assets/images/icon_man.gif"><strong> x 4</strong> Passengers</span></p>
+	 					<p><span><img src="assets/images/icon_sm_scase.gif"><strong> x 4</strong> Passengers</span></p>
+						<p><span><img src="assets/images/icon_lg_scase.gif"><strong> x 4</strong> Passengers</span></p>
+					</div>
+					<!-- Car Features -->
+					<div class="col-sm-6 col-md-3 features">
+						<p>Automatic Transmission</p>
+						<p>Air Conditioning</p>
+						<p>Dual Air Bags</p>
+						<p>24 miles/gallon</p>
+						<p>ABS</p>
+					</div>
 				</div>
 			</div>
 			<!-- Itenary -->
-			<div class="col-lg-4">Itenary</div>
+			<div class="col-sm-4 col-md-4 itinerary">
+				<strong>YOUR ITINERARY </strong><span id="change-itinerary"><a href="#">Change Itinerary</a></span>
+				<!-- Pickup Details -->
+				<div>
+					<strong>Pick Up</strong>	
+					<p>Ft. Lauderdale Airport FL, US<br>600 Terminal Drive<br>Dania FL, US 33004</p>
+				</div>
+				<!-- Return Details -->
+				<div>
+					<strong>Return</strong>	
+					<p>Ft. Lauderdale Airport FL, US<br>600 Terminal Drive<br>Dania FL, US 33004</p>
+				</div>
+				<!-- Pickup Date -->
+				<div>
+					<strong>Pick Up Date</strong>	
+					<p>Wed, Feb 16 2011 at 10:00 AM</p>
+				</div>
+				<!-- Return Date -->
+				<div>
+					<strong>Return Date</strong>	
+					<p>Wed, Feb 23, 2011 at 10:00</p>
+				</div>
+				<div id="offer"><img src="assets/images/vehicles/offer.gif"></div>
+			</div>
 		</div>
 		<!-- Footer -->
-		<div class="row">
-			<div class="col-lg-4">Step 1</div>
-			<div class="col-lg-2">Step 2</div>
-			<div class="col-lg-2">Step 3</div>
-			<div class="col-lg-4">Step 4</div>
+		<div class="row footer">
+			<!-- Social Icons -->
+			<div class="col-sm-6 col-md-4">
+				<h4>STAY CONNECTED</h4>
+				<p><input type="text" name="" placeholder="Sign Up For Emails"> <button>Submit</button></p>
+				<p id="social">
+					<img src="assets/images/youtube.png">
+					<img src="assets/images/twitter.png">
+					<img src="assets/images/facebook.png">
+					<img src="assets/images/youtube.png">
+				</p>
+				<p>
+					<img src="assets/images/phoneIcon.png"> Advantage Rent A Car Mobile	
+				</p>
+			</div>
+			<!-- Rates & Reservations -->
+			<div class="col-sm-6 col-md-2">
+				<p><strong>Rates & Reservations</strong></p>
+				<p style="line-height: 0.7">Get a Quote</p>
+				<p style="line-height: 0.7">Modify/Cancel</p>
+				<p style="line-height: 0.7">Review</p>
+				<p style="line-height: 2"><strong>A-PASS Online Check-In</strong></p>
+				<p><strong>Find a Location</strong></p>				
+			</div>
+			<!-- Deals & Offers -->
+			<div class="col-sm-6 col-md-2">
+				<p style="line-height: 2"><strong>Deals & Offers</strong></p>
+				<p style="line-height: 2"><strong>Contact Us</strong></p>
+				<p style="line-height: 2"><strong>Customer Support</strong></p>
+				<p style="line-height: 0.9" style="line-height: 0.9">FAQs</p>
+				<p style="line-height: 0.9" style="line-height: 0.9">Request a Receipt</p>
+				<p style="line-height: 0.9" style="line-height: 0.9">Rental Qualifications/Requirements</p>
+			</div>
+			<!-- Careers -->
+			<div class="col-sm-6 col-md-4">
+				<p style="line-height: 0.9">Careers</p>
+				<p style="line-height: 0.9">Privacy Policy</p>
+				<p style="line-height: 0.9">Travel Agent Login</p>
+				<p style="line-height: 0.9">Site Map</p>
+				<p style="line-height: 0.9">Business Travel</p>
+				<p style="line-height: 0.9">Accident Report</p>
+			</div>
+		</div>
+		<div class="row copyright">
+			<p id="copyright">@REG U.S. PAT OFF 2010 Simply Wheelz LLC. Advantage Rent A Car is a registered trademark of Simply Wheels LLC. All rights reserved.</p>
 		</div>
 	</div>
-	<script type="text/javascript" src="bootstrap.js"></script>
 </body>
 </html>
